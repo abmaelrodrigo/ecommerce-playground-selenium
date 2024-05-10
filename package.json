@@ -1,0 +1,22 @@
+{
+  "name": "lumastore-selenium",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "chromedriver": "^124.0.2",
+    "mocha-selenium": "^0.1.1",
+    "selenium-webdriver": "^4.20.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
