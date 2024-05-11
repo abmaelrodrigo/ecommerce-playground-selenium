@@ -26,9 +26,9 @@ To generate user data, we used the API obtained from https://randomuser.me/, usi
 
 # How to install and check the project?
 
-A. After git clone this project to your local machine, access the project directory and do the following steps: 
+After git clone this project to your local machine, access the project directory and do the following steps: 
 
-1. **Install Selenium**: 
+1. **Install Selenium:**
 ```shell
 npm install selenium-webdriver
 ``` 
@@ -36,7 +36,7 @@ npm install selenium-webdriver
 
     `npm install mocha`
 
-3. Install Testing Framework
+3. **Install Testing Framework:**
 
 The "***npm install mocha***" command installs the Mocha test framework as a development dependency for your project. Mocha is a popular JavaScript test framework that is used to run automated tests for web applications.
 
@@ -49,17 +49,22 @@ npm install mocha
 npm install mocha-selenium
 ```
 
-4. Install Assertion Library
+4. **Install Assertion Library:**
 ```shell
 npm install chai
 ```
 
-5. Install Reporting Framework
+5. **Install Reporting Framework:**
 ```bash
 npm install --save-dev mochawesome
 ```
 
-6. **Run the test:**: 
+6. **Install Node-Fetch Library:**
+```bash
+npm install node-fetch
+```
+
+7. **Run the test:**
 
     `npm test tests/verify.playground.store.spec.js`
 
