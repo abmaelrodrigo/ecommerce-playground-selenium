@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-05-10T23:10:22.774Z",
-    "end": "2024-05-10T23:11:06.938Z",
-    "duration": 44164,
+    "start": "2024-05-11T13:43:26.515Z",
+    "end": "2024-05-11T13:44:15.716Z",
+    "duration": 49201,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "35ad503c-71c7-445b-b838-6cda334f991c",
+      "uuid": "ad7bfa6f-09aa-42e2-8658-4459ac458efb",
       "title": "",
       "fullFile": "/Users/abmaelrodrigo/Desktop/lumastore-selenium/tests/verify.luma.store.spec.js",
       "file": "/tests/verify.luma.store.spec.js",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f44f49c2-85a7-4ef7-a309-ab8c255760e7",
-          "title": "Verify search, add product and create user test cases",
+          "uuid": "85c2e1d6-457a-4c7e-be79-318c756bd293",
+          "title": "Verify search, add product, create user and login test cases",
           "fullFile": "/Users/abmaelrodrigo/Desktop/lumastore-selenium/tests/verify.luma.store.spec.js",
           "file": "/tests/verify.luma.store.spec.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook in \"Verify search, add product and create user test cases\"",
-              "fullTitle": "Verify search, add product and create user test cases \"before all\" hook in \"Verify search, add product and create user test cases\"",
+              "title": "\"before each\" hook in \"Verify search, add product, create user and login test cases\"",
+              "fullTitle": "Verify search, add product, create user and login test cases \"before each\" hook in \"Verify search, add product, create user and login test cases\"",
               "timedOut": false,
-              "duration": 27192,
+              "duration": 30188,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,18 +45,18 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get('https://ecommerce-playground.lambdatest.io/index.php?route=common/home');",
               "err": {},
-              "uuid": "579e0e3f-6227-41b4-832f-015efeafe014",
-              "parentUUID": "f44f49c2-85a7-4ef7-a309-ab8c255760e7",
+              "uuid": "8c2b3613-63b9-405e-a227-d3a4af6e7664",
+              "parentUUID": "85c2e1d6-457a-4c7e-be79-318c756bd293",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Verify search, add product and create user test cases\"",
-              "fullTitle": "Verify search, add product and create user test cases \"after all\" hook in \"Verify search, add product and create user test cases\"",
+              "title": "\"after each\" hook in \"Verify search, add product, create user and login test cases\"",
+              "fullTitle": "Verify search, add product, create user and login test cases \"after each\" hook in \"Verify search, add product, create user and login test cases\"",
               "timedOut": false,
-              "duration": 79,
+              "duration": 76,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,40 +65,40 @@
               "context": null,
               "code": "if (driver) {\n  await driver.quit();\n}",
               "err": {},
-              "uuid": "fbe45961-e54a-4ce4-a527-3429b7705f93",
-              "parentUUID": "f44f49c2-85a7-4ef7-a309-ab8c255760e7",
+              "uuid": "6ec3c56f-4e1b-4f16-a70e-31166d2699a0",
+              "parentUUID": "85c2e1d6-457a-4c7e-be79-318c756bd293",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "Verify the searching functionaly",
-              "fullTitle": "Verify search, add product and create user test cases Verify the searching functionaly",
+              "title": "Verify user can not login in with invalid credentials",
+              "fullTitle": "Verify search, add product, create user and login test cases Verify user can not login in with invalid credentials",
               "timedOut": false,
-              "duration": 16863,
+              "duration": 18917,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const homepage = new HomePage(driver);\nconst resultspage = new ResultsPage(driver);\n// Search for a term\nawait homepage.searchForATerm(searchItems[0]);\n// Assertions to know user is on Results Page\nawait resultspage.verifyPageTitle(searchItems[0]);\n//await resultspage.verifyProductGrid();",
+              "code": "const homepage = new HomePage(driver);\n    const loginpage = new LoginPage(driver);\n  \n    // go to login page\n    await homepage.goToLoginPage();\n    // Assert new user is on login page\n    //await loginpage.verifyUserIsOnLoginPage();\n    await loginpage.enterUserCredentials();\n    await loginpage.verifyUserIsNotLogedIn();",
               "err": {},
-              "uuid": "1b8cecfa-4301-43a9-aac7-65acc047ae4a",
-              "parentUUID": "f44f49c2-85a7-4ef7-a309-ab8c255760e7",
+              "uuid": "b23fdb92-eec4-4145-988e-6b91abdf851e",
+              "parentUUID": "85c2e1d6-457a-4c7e-be79-318c756bd293",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1b8cecfa-4301-43a9-aac7-65acc047ae4a"
+            "b23fdb92-eec4-4145-988e-6b91abdf851e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16863,
+          "duration": 18917,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000

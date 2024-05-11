@@ -1,4 +1,4 @@
-# lumastore-selenium
+# ecommerce-playground-selenium
 
 👋 Hello!
 
