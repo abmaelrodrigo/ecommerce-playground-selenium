@@ -32,11 +32,8 @@ After git clone this project to your local machine, access the project directory
 ```shell
 npm install selenium-webdriver
 ``` 
-2.  **Installs Mocha test framework** as a development dependency for your projec:
 
-    `npm install mocha`
-
-3. **Install Testing Framework:**
+2. **Install Testing Framework:**
 
 The "***npm install mocha***" command installs the Mocha test framework as a development dependency for your project. Mocha is a popular JavaScript test framework that is used to run automated tests for web applications.
 
@@ -49,25 +46,25 @@ npm install mocha
 npm install mocha-selenium
 ```
 
-4. **Install Assertion Library:**
+3. **Install Assertion Library:**
 ```shell
 npm install chai
 ```
 
-5. **Install Reporting Framework:**
+4. **Install Reporting Framework:**
 ```bash
 npm install --save-dev mochawesome
 ```
 
-6. **Install Node-Fetch Library:**
+5. **Install Node-Fetch Library:**
 ```bash
 npm install node-fetch
 ```
 
-7. **Run the test:**
-
-    `npm test tests/verify.playground.store.spec.js`
-
+6. **Run the test:**
+```bash
+    npm test tests/verify.playground.store.spec.js
+```
 
 # Test reports
 Get location from the terminal window and open it in the brower, for example: 

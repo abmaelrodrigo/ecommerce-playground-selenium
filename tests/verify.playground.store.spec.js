@@ -78,7 +78,6 @@ describe('Verify search, add product, create user and login test cases', functio
 
 
     const homepage = new HomePage(driver);
-    const resultspage = new ResultsPage(driver);
     const createaccount = new CreateAccountPage(driver);
     const myaccount = new MyAccountPage(driver);
 
@@ -96,7 +95,7 @@ describe('Verify search, add product, create user and login test cases', functio
 
   });
 
-  it.only('Verify user can not login in with invalid credentials', async function () {
+  it('Verify user can not login in with invalid credentials', async function () {
 
 
     const homepage = new HomePage(driver);
@@ -108,9 +107,13 @@ describe('Verify search, add product, create user and login test cases', functio
 
     // Assert new user is on login page
 
-    //await loginpage.verifyUserIsOnLoginPage();
+    await loginpage.verifyUserIsOnLoginPage();
+
+    // Enter invalid credentials, and click on the login button
 
     await loginpage.enterUserCredentials();
+
+    // Assert user cannot login with invalid credetials
 
     await loginpage.verifyUserIsNotLogedIn();
 
